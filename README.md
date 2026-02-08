@@ -15,7 +15,7 @@ The AI Study Planner is a Python-based application designed to help students org
 ## Prerequisites
 
 - Python 3.8 or higher
-- pip (Python package installer)
+- pip (Python package installer
 
 ## Installation
 
