@@ -1,0 +1,695 @@
+{
+  "courses": [
+    {
+      "code": "CSC416",
+      "title": "Computer Security and Cryptography",
+      "level": "400L",
+      "semester": "Second",
+      "program": "BSc Computer Science",
+      "total_estimated_hours": 70,
+      "topics": [
+        {
+          "id": "CSC416-01",
+          "topic": "Introduction to Computer Security",
+          "keywords": [
+            "security basics",
+            "threats",
+            "vulnerabilities",
+            "attacks"
+          ],
+          "difficulty": 1,
+          "weight": 5,
+          "estimated_study_time": 2
+        },
+        {
+          "id": "CSC416-02",
+          "topic": "Security Principles and Models",
+          "keywords": [
+            "CIA triad",
+            "authentication",
+            "authorization",
+            "non-repudiation"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC416-03",
+          "topic": "Types of Security Attacks",
+          "keywords": [
+            "passive attacks",
+            "active attacks",
+            "interception",
+            "modification"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC416-04",
+          "topic": "Malware and Software Threats",
+          "keywords": [
+            "virus",
+            "worm",
+            "trojan",
+            "ransomware",
+            "spyware",
+            "rootkit"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC416-05",
+          "topic": "Operating System Security",
+          "keywords": [
+            "access control",
+            "memory protection",
+            "process isolation"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC416-06",
+          "topic": "Network Security",
+          "keywords": [
+            "firewalls",
+            "IDS",
+            "IPS",
+            "dos",
+            "ddos",
+            "mitm"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC416-07",
+          "topic": "Web and Application Security",
+          "keywords": [
+            "sql injection",
+            "xss",
+            "csrf",
+            "session hijacking"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC416-08",
+          "topic": "Introduction to Cryptography",
+          "keywords": [
+            "encryption",
+            "decryption",
+            "cipher",
+            "plaintext",
+            "ciphertext"
+          ],
+          "difficulty": 1,
+          "weight": 6,
+          "estimated_study_time": 2
+        },
+        {
+          "id": "CSC416-09",
+          "topic": "Classical Cryptography",
+          "keywords": [
+            "caesar cipher",
+            "vigenere",
+            "substitution",
+            "transposition"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC416-10",
+          "topic": "Symmetric Key Cryptography",
+          "keywords": [
+            "aes",
+            "des",
+            "3des",
+            "blowfish",
+            "rc4"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC416-11",
+          "topic": "Asymmetric Key Cryptography",
+          "keywords": [
+            "rsa",
+            "diffie hellman",
+            "elgamal",
+            "ecc"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC416-12",
+          "topic": "Cryptographic Hash Functions",
+          "keywords": [
+            "md5",
+            "sha1",
+            "sha256",
+            "sha3",
+            "hash"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC416-13",
+          "topic": "Digital Signatures",
+          "keywords": [
+            "rsa signature",
+            "dsa",
+            "ecdsa"
+          ],
+          "difficulty": 4,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC416-14",
+          "topic": "Message Authentication Codes",
+          "keywords": [
+            "hmac",
+            "cbc-mac",
+            "mac"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC416-15",
+          "topic": "Key Management and PKI",
+          "keywords": [
+            "pki",
+            "certificates",
+            "ca",
+            "key exchange"
+          ],
+          "difficulty": 4,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC416-16",
+          "topic": "Security Protocols",
+          "keywords": [
+            "ssl",
+            "tls",
+            "https",
+            "ipsec",
+            "kerberos"
+          ],
+          "difficulty": 4,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC416-17",
+          "topic": "Security Policies, Ethics and Law",
+          "keywords": [
+            "cybercrime",
+            "ethics",
+            "digital forensics",
+            "privacy"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        }
+      ]
+    },
+    {
+      "code": "CSC420",
+      "title": "Statistical Computing and Data Mining",
+      "level": "400L",
+      "semester": "Second",
+      "program": "BSc Computer Science",
+      "total_estimated_hours": 75,
+      "topics": [
+        {
+          "id": "CSC420-01",
+          "topic": "Introduction to Statistical Computing and Data Mining",
+          "keywords": [
+            "data mining",
+            "statistical computing",
+            "knowledge discovery",
+            "kdd"
+          ],
+          "difficulty": 1,
+          "weight": 5,
+          "estimated_study_time": 2
+        },
+        {
+          "id": "CSC420-02",
+          "topic": "Probability Theory Fundamentals",
+          "keywords": [
+            "probability",
+            "random variables",
+            "distributions",
+            "expectation",
+            "variance"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC420-03",
+          "topic": "Statistical Data Analysis",
+          "keywords": [
+            "descriptive statistics",
+            "exploratory data analysis",
+            "eda",
+            "summary statistics"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC420-04",
+          "topic": "Data Preprocessing",
+          "keywords": [
+            "data cleaning",
+            "normalization",
+            "missing values",
+            "noise removal",
+            "feature scaling"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC420-05",
+          "topic": "Data Warehousing and OLAP",
+          "keywords": [
+            "data warehouse",
+            "olap",
+            "etl",
+            "multidimensional model"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC420-06",
+          "topic": "Association Rule Mining",
+          "keywords": [
+            "apriori",
+            "frequent itemsets",
+            "support",
+            "confidence",
+            "lift"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC420-07",
+          "topic": "Classification Techniques",
+          "keywords": [
+            "decision tree",
+            "naive bayes",
+            "knn",
+            "classification"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC420-08",
+          "topic": "Regression Analysis",
+          "keywords": [
+            "linear regression",
+            "logistic regression",
+            "predictive modeling"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC420-09",
+          "topic": "Clustering Techniques",
+          "keywords": [
+            "k-means",
+            "hierarchical clustering",
+            "dbscan",
+            "unsupervised learning"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC420-10",
+          "topic": "Dimensionality Reduction",
+          "keywords": [
+            "pca",
+            "feature selection",
+            "curse of dimensionality"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC420-11",
+          "topic": "Outlier Detection",
+          "keywords": [
+            "anomaly detection",
+            "novelty detection",
+            "noise detection"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC420-12",
+          "topic": "Time Series Analysis",
+          "keywords": [
+            "time series",
+            "trend",
+            "seasonality",
+            "forecasting"
+          ],
+          "difficulty": 4,
+          "weight": 8,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC420-13",
+          "topic": "Data Visualization",
+          "keywords": [
+            "charts",
+            "plots",
+            "dashboards",
+            "visual analytics"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC420-14",
+          "topic": "Statistical Computing Tools",
+          "keywords": [
+            "python",
+            "r",
+            "numpy",
+            "pandas",
+            "scipy",
+            "matplotlib"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC420-15",
+          "topic": "Machine Learning for Data Mining",
+          "keywords": [
+            "supervised learning",
+            "unsupervised learning",
+            "model training",
+            "evaluation"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC420-16",
+          "topic": "Model Evaluation and Validation",
+          "keywords": [
+            "cross validation",
+            "confusion matrix",
+            "accuracy",
+            "precision",
+            "recall",
+            "f1 score"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC420-17",
+          "topic": "Applications of Data Mining",
+          "keywords": [
+            "business intelligence",
+            "fraud detection",
+            "bioinformatics",
+            "market basket analysis"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        }
+      ]
+    },
+    {
+      "code": "CSC440",
+      "title": "Human-Computer Interaction",
+      "level": "400L",
+      "semester": "Second",
+      "program": "BSc Computer Science",
+      "total_estimated_hours": 65,
+      "topics": [
+        {
+          "id": "CSC440-01",
+          "topic": "Introduction to Human-Computer Interaction",
+          "keywords": [
+            "hci",
+            "human computer interaction",
+            "usability",
+            "user experience",
+            "ux"
+          ],
+          "difficulty": 1,
+          "weight": 5,
+          "estimated_study_time": 2
+        },
+        {
+          "id": "CSC440-02",
+          "topic": "Human Factors in System Design",
+          "keywords": [
+            "human factors",
+            "cognitive psychology",
+            "ergonomics",
+            "perception",
+            "memory"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC440-03",
+          "topic": "User-Centered Design (UCD)",
+          "keywords": [
+            "ucd",
+            "design thinking",
+            "user needs",
+            "persona",
+            "scenario"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC440-04",
+          "topic": "Interaction Design Principles",
+          "keywords": [
+            "consistency",
+            "feedback",
+            "affordance",
+            "visibility",
+            "constraints",
+            "mapping"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC440-05",
+          "topic": "Usability Engineering",
+          "keywords": [
+            "usability",
+            "learnability",
+            "efficiency",
+            "memorability",
+            "errors",
+            "satisfaction"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC440-06",
+          "topic": "User Interface Design",
+          "keywords": [
+            "ui design",
+            "layout",
+            "typography",
+            "color theory",
+            "design systems"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC440-07",
+          "topic": "Prototyping Techniques",
+          "keywords": [
+            "wireframing",
+            "low fidelity",
+            "high fidelity",
+            "mockups",
+            "prototypes"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC440-08",
+          "topic": "Usability Evaluation Methods",
+          "keywords": [
+            "usability testing",
+            "heuristic evaluation",
+            "cognitive walkthrough",
+            "user testing"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC440-09",
+          "topic": "Human Input and Output Devices",
+          "keywords": [
+            "keyboard",
+            "mouse",
+            "touch",
+            "gesture",
+            "voice",
+            "haptic"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC440-10",
+          "topic": "Accessibility and Inclusive Design",
+          "keywords": [
+            "accessibility",
+            "a11y",
+            "wcag",
+            "inclusive design",
+            "disability"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC440-11",
+          "topic": "Cognitive Models and Mental Models",
+          "keywords": [
+            "mental models",
+            "cognitive load",
+            "human memory",
+            "learning models"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC440-12",
+          "topic": "Task Analysis and User Research",
+          "keywords": [
+            "task analysis",
+            "user research",
+            "interviews",
+            "questionnaires",
+            "observations"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC440-13",
+          "topic": "Design Guidelines and Standards",
+          "keywords": [
+            "heuristics",
+            "iso standards",
+            "design guidelines",
+            "best practices"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC440-14",
+          "topic": "Evaluation Metrics and Analytics",
+          "keywords": [
+            "task success rate",
+            "time on task",
+            "error rate",
+            "user satisfaction"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC440-15",
+          "topic": "Emerging Trends in HCI",
+          "keywords": [
+            "ar",
+            "vr",
+            "ai interfaces",
+            "voice ui",
+            "gesture interaction",
+            "brain computer interface"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        }
+      ]
+    }
+  ]
+}
