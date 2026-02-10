@@ -29,14 +29,14 @@ def read_root():
     return {"message": "Welcome to the AI Study Planner API. Use /schedule to generate a study plan."}
 
 @app.get("/schedule")
-def get_schedule(query: str, days: int):
+def get_schedule(query: str, days: int, daily_hours: float = 2.0):
     if not os.path.exists(DATA_PATH):
         raise HTTPException(status_code=500, detail="Course data file not found.")
     
     try:
         loader = CourseDataLoader(DATA_PATH)
         planner = StudyPlanner(loader)
-        result = planner.generate_schedule(query, days)
+        result = planner.generate_schedule(query, days, daily_hours)
         
         if "error" in result:
              raise HTTPException(status_code=400, detail=result["error"])

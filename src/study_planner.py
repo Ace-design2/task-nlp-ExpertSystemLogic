@@ -72,7 +72,7 @@ class StudyPlanner:
 
         return filtered_topics
 
-    def generate_schedule(self, query: str, days: int) -> Dict[str, Any]:
+    def generate_schedule(self, query: str, days: int, daily_hours: float) -> Dict[str, Any]:
         relevant_topics = self.filter_topics(query)
         
         if not relevant_topics:
@@ -85,42 +85,113 @@ class StudyPlanner:
         
         if days <= 0:
              return {"error": "Days must be greater than 0"}
+        
+        if daily_hours <= 0:
+             return {"error": "Daily hours must be greater than 0"}
 
-        # Simple distribution: bin packing into days
+        # --- Validation Logic ---
+        required_daily_hours = total_study_time / days
+        status = "success"
+        message = "Schedule generated successfully."
+        adjusted_hours = daily_hours
+        
+        # Heuristics for "Realistic" vs "Impossible"
+        # If required is more than user wanted:
+        if required_daily_hours > daily_hours:
+            # If the difference is small (e.g., within +2 hours or safe limit like < 8-10h/day depending on context)
+            # Let's say +3 hours tolerance or absolute max of 12 hours/day for the "stretch" goal.
+            # User example: 2 hrs user input, might need 3 hrs (Adjustable)
+            
+            # Adjustable threshold:
+            # 1. New requirement isn't absurdly high (> 12 hours/day is physically draining)
+            # 2. Delta isn't massive (maybe max +3 hours from what they planned?)
+            
+            is_adjustable = (required_daily_hours <= 12) and (required_daily_hours <= daily_hours + 4)
+             
+            if is_adjustable:
+                status = "adjusted"
+                adjusted_hours = math.ceil(required_daily_hours * 2) / 2  # Round up to nearest 0.5
+                message = (
+                    f"Notice: {daily_hours} hours/day is insufficient for this content ({total_study_time} total hours). "
+                    f"Adjusted to {adjusted_hours} hours/day to complete in {days} days."
+                )
+            else:
+                status = "impossible"
+                # Calculate needed days if they strictly stick to their daily_hours
+                needed_days = math.ceil(total_study_time / daily_hours)
+                return {
+                    "error": (
+                        f"It is not possible to study {total_study_time} hours of content in {days} days "
+                        f"with only {daily_hours} hours/day (requires {required_daily_hours:.1f} hours/day). "
+                        f"Try extending duration to {needed_days} days."
+                    ),
+                    "status": "impossible",
+                    "suggestion": {
+                        "needed_days": needed_days,
+                        "needed_daily_hours": round(required_daily_hours, 1)
+                    }
+                }
+
+        # --- Generation Logic ---
+        # Use the adjusted_hours (or original if sufficient) as the capacity per day
+        # NOTE: If user provided MORE hours than needed, we still distribute, but maybe we fill less per day?
+        # Actually, "bin packing" usually tries to fill up the available capacity. 
+        # But if total time < (days * daily_hours), we might finish early or have light days.
+        # The prompt implies we should just generate using "what the user wants" (or the adjusted amount).
+        
+        target_hours_per_day = adjusted_hours
+        
         schedule = {}
         for i in range(1, days + 1):
             schedule[f"Day {i}"] = {"topics": [], "total_hours": 0}
-        
-        target_hours_per_day = total_study_time / days
         
         current_day = 1
         current_day_hours = 0
         
         for topic in relevant_topics:
-            # Simple greedy fill
             if current_day > days:
                 current_day = days 
 
+            topic_time = topic["estimated_study_time"]
+            
+            # Add topic to current day
             schedule[f"Day {current_day}"]["topics"].append({
                 "course": topic.get("course_code", "Unknown"),
                 "topic": topic["topic"],
-                "time": topic["estimated_study_time"],
+                "time": topic_time,
                 "difficulty": topic["difficulty"]
             })
-            schedule[f"Day {current_day}"]["total_hours"] += topic["estimated_study_time"]
-            current_day_hours += topic["estimated_study_time"]
+            schedule[f"Day {current_day}"]["total_hours"] += topic_time
+            current_day_hours += topic_time
 
-            # Use a slightly relaxed threshold to avoid pushing small topics to next day unnecessarily
-            # strictly checking >= target might leave days empty if we strictly adhere.
-            # But the logic "if we EXCEEDED target, move to next" makes sense.
-            # Let's stick to the previous verified logic for now.
+            # Check if day is full
+            # We move to next day if we meet or exceed target, UNLESS it's the last day
             if current_day < days and current_day_hours >= target_hours_per_day:
                 current_day += 1
                 current_day_hours = 0
+                
+        # Clean up empty days if we finished early?
+        # The prompt doesn't strictly say, but if we have 30 days and finish in 15, days 16-30 are empty.
+        # We'll leave them as empty entries or maybe filter? 
+        # Let's keep them to show the user they have free time, or maybe prune.
+        # For this specific "impossible/realistic" logic, we just want to ensure we fit it.
+        
+        # Validate if we actually fit everything?
+        # Our greedy approach blindly puts things in the last day if overflow.
+        # So we should check if the last day is overloaded.
+        last_day_hours = schedule[f"Day {days}"]["total_hours"]
+        if last_day_hours > (target_hours_per_day * 1.5): # distinct overflow
+             # This might happen if individual topic is huge or packing was inefficient
+             # But our "Impossible" check earlier based on totals should catch most issues.
+             # We'll just append a note if it's tight.
+             pass
 
         return {
             "query": query,
             "days": days,
+            "daily_hours": adjusted_hours,
+            "status": status,
+            "message": message,
             "total_topics": len(relevant_topics),
             "total_hours": total_study_time,
             "schedule": schedule

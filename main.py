@@ -7,6 +7,7 @@ def main():
     parser = argparse.ArgumentParser(description="AI Study Planner")
     parser.add_argument("--query", type=str, required=True, help="Course code or topic to study")
     parser.add_argument("--days", type=int, required=True, help="Number of days for the study plan")
+    parser.add_argument("--daily-hours", type=float, default=2.0, help="Hours available per day for studying")
     
     args = parser.parse_args()
     
@@ -18,7 +19,7 @@ def main():
         loader = CourseDataLoader(data_path)
         planner = StudyPlanner(loader)
         
-        result = planner.generate_schedule(args.query, args.days)
+        result = planner.generate_schedule(args.query, args.days, args.daily_hours)
         
         print(json.dumps(result, indent=2))
         
