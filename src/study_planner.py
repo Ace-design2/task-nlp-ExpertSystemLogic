@@ -145,30 +145,62 @@ class StudyPlanner:
         for i in range(1, days + 1):
             schedule[f"Day {i}"] = {"topics": [], "total_hours": 0}
         
-        current_day = 1
-        current_day_hours = 0
-        
-        for topic in relevant_topics:
-            if current_day > days:
-                current_day = days 
-
-            topic_time = topic["estimated_study_time"]
-            
-            # Add topic to current day
-            schedule[f"Day {current_day}"]["topics"].append({
-                "course": topic.get("course_code", "Unknown"),
-                "topic": topic["topic"],
-                "time": topic_time,
-                "difficulty": topic["difficulty"]
+        # Queue Logic
+        # We process topics one by one, potentially splitting them
+        # We need a list of topic objects that track remaining time
+        topic_queue = []
+        for t in relevant_topics:
+            topic_queue.append({
+                "data": t,
+                "remaining_time": t["estimated_study_time"],
+                "part": 1
             })
-            schedule[f"Day {current_day}"]["total_hours"] += topic_time
-            current_day_hours += topic_time
 
-            # Check if day is full
-            # We move to next day if we meet or exceed target, UNLESS it's the last day
-            if current_day < days and current_day_hours >= target_hours_per_day:
+        current_day = 1
+        
+        while current_day <= days and topic_queue:
+            day_key = f"Day {current_day}"
+            day_capacity = target_hours_per_day - schedule[day_key]["total_hours"]
+            
+            # If day is full (or very close to full, handle float precision)
+            if day_capacity <= 0.01:
                 current_day += 1
-                current_day_hours = 0
+                continue
+                
+            # Get next topic
+            current_topic_obj = topic_queue[0]
+            topic_data = current_topic_obj["data"]
+            
+            # Determine how much we can fit
+            time_to_allocate = min(current_topic_obj["remaining_time"], day_capacity)
+            
+            # Prepare entry
+            topic_name = topic_data["topic"]
+            # Add Part suffix if it's a split topic (meaning total time != allocated OR part > 1)
+            # Actually, simplest is: if remaining > allocated OR part > 1
+            if current_topic_obj["part"] > 1 or current_topic_obj["remaining_time"] > time_to_allocate:
+                topic_name = f"{topic_name} (Part {current_topic_obj['part']})"
+            
+            schedule[day_key]["topics"].append({
+                "course": topic_data.get("course_code", "Unknown"),
+                "topic": topic_name,
+                "time": time_to_allocate,
+                "difficulty": topic_data["difficulty"]
+            })
+            
+            schedule[day_key]["total_hours"] += time_to_allocate
+            
+            # Update topic state
+            current_topic_obj["remaining_time"] -= time_to_allocate
+            
+            # If topic fully done, remove from queue
+            if current_topic_obj["remaining_time"] <= 0.01:
+                topic_queue.pop(0)
+            else:
+                # If not done, it stays in queue for next iteration (which will trigger next day)
+                current_topic_obj["part"] += 1
+                # We implicitly move to next day by loop condition on capacity
+                current_day += 1
                 
         # Clean up empty days if we finished early?
         # The prompt doesn't strictly say, but if we have 30 days and finish in 15, days 16-30 are empty.
