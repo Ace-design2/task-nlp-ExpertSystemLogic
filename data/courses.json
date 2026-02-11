@@ -690,6 +690,873 @@
           "estimated_study_time": 3
         }
       ]
+    },
+    {
+      "code": "CSC442",
+      "title": "Network Programming",
+      "level": "400L",
+      "semester": "Second",
+      "program": "BSc Computer Science",
+      "total_estimated_hours": 70,
+      "topics": [
+        {
+          "id": "CSC442-01",
+          "topic": "Introduction to Network Programming",
+          "keywords": [
+            "network programming",
+            "client server",
+            "distributed systems",
+            "sockets"
+          ],
+          "difficulty": 1,
+          "weight": 5,
+          "estimated_study_time": 2
+        },
+        {
+          "id": "CSC442-02",
+          "topic": "Networking Fundamentals Review",
+          "keywords": [
+            "tcp/ip",
+            "osi model",
+            "protocols",
+            "ip addressing",
+            "ports"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC442-03",
+          "topic": "Socket Programming Basics",
+          "keywords": [
+            "sockets",
+            "tcp sockets",
+            "udp sockets",
+            "bind",
+            "listen",
+            "accept",
+            "connect"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC442-04",
+          "topic": "Client-Server Architecture",
+          "keywords": [
+            "client server",
+            "request response",
+            "concurrent server",
+            "iterative server"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC442-05",
+          "topic": "Concurrent and Multithreaded Servers",
+          "keywords": [
+            "multithreading",
+            "multiprocessing",
+            "concurrency",
+            "parallel server"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC442-06",
+          "topic": "Network Protocol Implementation",
+          "keywords": [
+            "http",
+            "ftp",
+            "smtp",
+            "pop3",
+            "protocol design"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC442-07",
+          "topic": "Remote Procedure Call (RPC)",
+          "keywords": [
+            "rpc",
+            "distributed computing",
+            "client stub",
+            "server stub"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC442-08",
+          "topic": "Web Programming and APIs",
+          "keywords": [
+            "http",
+            "rest api",
+            "json",
+            "web services",
+            "api design"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC442-09",
+          "topic": "Secure Network Programming",
+          "keywords": [
+            "ssl",
+            "tls",
+            "encryption",
+            "authentication",
+            "secure sockets"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC442-10",
+          "topic": "Asynchronous and Event-Driven Programming",
+          "keywords": [
+            "async io",
+            "non blocking",
+            "event loop",
+            "select",
+            "poll"
+          ],
+          "difficulty": 4,
+          "weight": 8,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC442-11",
+          "topic": "Peer-to-Peer (P2P) Systems",
+          "keywords": [
+            "p2p",
+            "distributed systems",
+            "torrent",
+            "file sharing"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC442-12",
+          "topic": "Middleware and Distributed Objects",
+          "keywords": [
+            "middleware",
+            "distributed objects",
+            "corba",
+            "rmi"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC442-13",
+          "topic": "Network Performance and Optimization",
+          "keywords": [
+            "latency",
+            "throughput",
+            "bandwidth",
+            "optimization"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC442-14",
+          "topic": "Debugging and Testing Network Applications",
+          "keywords": [
+            "network debugging",
+            "packet sniffing",
+            "wireshark",
+            "logging"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC442-15",
+          "topic": "Network Programming Tools and Libraries",
+          "keywords": [
+            "python sockets",
+            "java networking",
+            "nodejs networking",
+            "frameworks"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        }
+      ]
+    },
+    {
+      "code": "CSC444",
+      "title": "Net-Centric Computing",
+      "level": "400L",
+      "semester": "Second",
+      "program": "BSc Computer Science",
+      "total_estimated_hours": 70,
+      "topics": [
+        {
+          "id": "CSC444-01",
+          "topic": "Introduction to Net-Centric Computing",
+          "keywords": [
+            "net centric",
+            "distributed systems",
+            "internet computing",
+            "web based systems"
+          ],
+          "difficulty": 1,
+          "weight": 5,
+          "estimated_study_time": 2
+        },
+        {
+          "id": "CSC444-02",
+          "topic": "Internet Architecture and Protocols",
+          "keywords": [
+            "tcp/ip",
+            "dns",
+            "http",
+            "smtp",
+            "ftp",
+            "protocol stack"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC444-03",
+          "topic": "Web Technologies and Frameworks",
+          "keywords": [
+            "html",
+            "css",
+            "javascript",
+            "frontend frameworks",
+            "backend frameworks"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC444-04",
+          "topic": "Distributed Computing Models",
+          "keywords": [
+            "client server",
+            "peer to peer",
+            "cloud computing",
+            "service oriented architecture"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC444-05",
+          "topic": "Web Services and APIs",
+          "keywords": [
+            "rest",
+            "soap",
+            "json",
+            "xml",
+            "api design"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC444-06",
+          "topic": "Service-Oriented Architecture (SOA)",
+          "keywords": [
+            "soa",
+            "microservices",
+            "service composition",
+            "enterprise services"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC444-07",
+          "topic": "Cloud Computing Fundamentals",
+          "keywords": [
+            "cloud",
+            "iaas",
+            "paas",
+            "saas",
+            "virtualization",
+            "containers"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC444-08",
+          "topic": "Web Security and Privacy",
+          "keywords": [
+            "https",
+            "authentication",
+            "authorization",
+            "encryption",
+            "web security"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC444-09",
+          "topic": "Distributed Databases",
+          "keywords": [
+            "distributed db",
+            "replication",
+            "sharding",
+            "consistency models"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC444-10",
+          "topic": "Middleware Technologies",
+          "keywords": [
+            "message queues",
+            "brokers",
+            "rabbitmq",
+            "kafka",
+            "middleware"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC444-11",
+          "topic": "Web-Based Distributed Applications",
+          "keywords": [
+            "distributed apps",
+            "web systems",
+            "scalable systems"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC444-12",
+          "topic": "Scalability and Performance Optimization",
+          "keywords": [
+            "load balancing",
+            "caching",
+            "cdn",
+            "performance tuning"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC444-13",
+          "topic": "Internet of Things (IoT) and Net-Centric Systems",
+          "keywords": [
+            "iot",
+            "smart devices",
+            "sensor networks",
+            "edge computing"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC444-14",
+          "topic": "Mobile and Wireless Computing",
+          "keywords": [
+            "mobile computing",
+            "wireless networks",
+            "5g",
+            "mobile apps"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC444-15",
+          "topic": "Emerging Trends in Net-Centric Computing",
+          "keywords": [
+            "edge computing",
+            "serverless",
+            "blockchain",
+            "ai services"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        }
+      ]
+    },
+    {
+      "code": "CSC446",
+      "title": "Computer Network and Data Communication",
+      "level": "400L",
+      "semester": "Second",
+      "program": "BSc Computer Science",
+      "total_estimated_hours": 75,
+      "topics": [
+        {
+          "id": "CSC446-01",
+          "topic": "Introduction to Computer Networks",
+          "keywords": [
+            "computer networks",
+            "network basics",
+            "data communication",
+            "network overview"
+          ],
+          "difficulty": 1,
+          "weight": 5,
+          "estimated_study_time": 2
+        },
+        {
+          "id": "CSC446-02",
+          "topic": "Data Communication Fundamentals",
+          "keywords": [
+            "data transmission",
+            "signals",
+            "communication models",
+            "analog",
+            "digital"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC446-03",
+          "topic": "Network Types and Topologies",
+          "keywords": [
+            "lan",
+            "wan",
+            "man",
+            "mesh",
+            "star",
+            "bus",
+            "ring",
+            "hybrid"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC446-04",
+          "topic": "Transmission Media",
+          "keywords": [
+            "twisted pair",
+            "coaxial",
+            "fiber optic",
+            "wireless",
+            "radio waves"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC446-05",
+          "topic": "Signal Encoding Techniques",
+          "keywords": [
+            "encoding",
+            "modulation",
+            "digital signals",
+            "analog signals",
+            "line coding"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC446-06",
+          "topic": "Error Detection and Correction",
+          "keywords": [
+            "parity check",
+            "crc",
+            "hamming code",
+            "error control"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC446-07",
+          "topic": "Data Link Layer and Protocols",
+          "keywords": [
+            "data link layer",
+            "framing",
+            "mac",
+            "ethernet",
+            "arp"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC446-08",
+          "topic": "Flow Control and Medium Access Control",
+          "keywords": [
+            "flow control",
+            "mac",
+            "csma",
+            "token passing"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC446-09",
+          "topic": "Network Layer Fundamentals",
+          "keywords": [
+            "network layer",
+            "routing",
+            "logical addressing",
+            "packet forwarding"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC446-10",
+          "topic": "Routing Algorithms",
+          "keywords": [
+            "distance vector",
+            "link state",
+            "ospf",
+            "rip",
+            "bgp"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC446-11",
+          "topic": "IP Addressing and Subnetting",
+          "keywords": [
+            "ip addressing",
+            "ipv4",
+            "ipv6",
+            "cidr",
+            "subnetting"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC446-12",
+          "topic": "Transport Layer Protocols",
+          "keywords": [
+            "tcp",
+            "udp",
+            "flow control",
+            "congestion control"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC446-13",
+          "topic": "Switching Techniques",
+          "keywords": [
+            "circuit switching",
+            "packet switching",
+            "frame relay",
+            "atm"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC446-14",
+          "topic": "Wireless and Mobile Networks",
+          "keywords": [
+            "wireless networks",
+            "wifi",
+            "bluetooth",
+            "mobile communication",
+            "cellular networks"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC446-15",
+          "topic": "Network Security Fundamentals",
+          "keywords": [
+            "network security",
+            "firewalls",
+            "ids",
+            "encryption",
+            "vpn"
+          ],
+          "difficulty": 4,
+          "weight": 9,
+          "estimated_study_time": 5
+        },
+        {
+          "id": "CSC446-16",
+          "topic": "Network Performance Evaluation",
+          "keywords": [
+            "throughput",
+            "latency",
+            "jitter",
+            "performance analysis",
+            "qos"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        }
+      ]
+    },
+    {
+      "code": "CSC448",
+      "title": "Entrepreneur for Computer Science",
+      "level": "400L",
+      "semester": "Second",
+      "program": "BSc Computer Science",
+      "total_estimated_hours": 60,
+      "topics": [
+        {
+          "id": "CSC448-01",
+          "topic": "Introduction to Entrepreneurship",
+          "keywords": [
+            "entrepreneurship",
+            "business basics",
+            "startup fundamentals",
+            "innovation"
+          ],
+          "difficulty": 1,
+          "weight": 5,
+          "estimated_study_time": 2
+        },
+        {
+          "id": "CSC448-02",
+          "topic": "Entrepreneurial Mindset and Opportunity Identification",
+          "keywords": [
+            "entrepreneurial mindset",
+            "opportunity recognition",
+            "problem solving",
+            "innovation"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC448-03",
+          "topic": "Business Idea Generation and Validation",
+          "keywords": [
+            "idea generation",
+            "market research",
+            "customer discovery",
+            "product validation"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC448-04",
+          "topic": "Business Model Development",
+          "keywords": [
+            "business model",
+            "value proposition",
+            "revenue streams",
+            "cost structure",
+            "business model canvas"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC448-05",
+          "topic": "Technology-Based Entrepreneurship",
+          "keywords": [
+            "tech startup",
+            "software business",
+            "digital products",
+            "saas",
+            "platform business"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC448-06",
+          "topic": "Market Analysis and Competitive Strategy",
+          "keywords": [
+            "market analysis",
+            "competitor analysis",
+            "competitive advantage",
+            "swot analysis"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC448-07",
+          "topic": "Funding and Financial Planning",
+          "keywords": [
+            "startup funding",
+            "bootstrapping",
+            "venture capital",
+            "angel investors",
+            "financial planning"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC448-08",
+          "topic": "Accounting and Financial Management for Startups",
+          "keywords": [
+            "accounting basics",
+            "cash flow",
+            "financial statements",
+            "budgeting"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC448-09",
+          "topic": "Legal and Ethical Issues in Entrepreneurship",
+          "keywords": [
+            "business law",
+            "intellectual property",
+            "contracts",
+            "ethics",
+            "compliance"
+          ],
+          "difficulty": 2,
+          "weight": 6,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC448-10",
+          "topic": "Product Development and Prototyping",
+          "keywords": [
+            "product development",
+            "prototyping",
+            "mvp",
+            "user testing",
+            "iteration"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC448-11",
+          "topic": "Marketing and Growth Strategies",
+          "keywords": [
+            "digital marketing",
+            "growth hacking",
+            "branding",
+            "customer acquisition"
+          ],
+          "difficulty": 3,
+          "weight": 8,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC448-12",
+          "topic": "Operations and Team Management",
+          "keywords": [
+            "operations",
+            "team building",
+            "leadership",
+            "startup culture",
+            "management"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC448-13",
+          "topic": "Pitching and Presentation Skills",
+          "keywords": [
+            "pitch deck",
+            "startup pitch",
+            "presentation",
+            "investor pitching"
+          ],
+          "difficulty": 2,
+          "weight": 7,
+          "estimated_study_time": 3
+        },
+        {
+          "id": "CSC448-14",
+          "topic": "Risk Management and Business Sustainability",
+          "keywords": [
+            "risk management",
+            "business risks",
+            "sustainability",
+            "scaling"
+          ],
+          "difficulty": 3,
+          "weight": 7,
+          "estimated_study_time": 4
+        },
+        {
+          "id": "CSC448-15",
+          "topic": "Case Studies in Tech Entrepreneurship",
+          "keywords": [
+            "case studies",
+            "startup success",
+            "startup failure",
+            "tech founders"
+          ],
+          "difficulty": 1,
+          "weight": 5,
+          "estimated_study_time": 2
+        }
+      ]
     }
   ]
 }
